@@ -1,13 +1,15 @@
-import React from "react";
+import React, { Component } from "react";
 import "./previewPanel.css"
 
-function PreviewPanel () {
-
-    return (
-        <div className="gradientPreview">
-            
-        </div>
-    )
+const PreviewPanel = ({style, direction, color1, color2}) => {
+return(
+    <div className="gradientPreview"  
+    style={{ 
+    backgroundImage: `${style}-gradient(${direction}, ${color1}, ${color2})`
+    }}>
+    
+</div>
+)
 }
 
 export default PreviewPanel;

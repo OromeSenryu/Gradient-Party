@@ -6,7 +6,7 @@
     flex-direction: column;
     position: absolute;
     width: 20%;
-    height: 100%;
+    height: 100vh;
     padding-left: 1%;
     padding-right: 1%;
 }
@@ -61,21 +61,25 @@ h4 {
     margin-bottom: 2%;
 }
 
-.generalStyleButton:hover {
+.generalStyleButton:hover,
+.generalStyleButton:focus {
     background-color: #A4A3A3;
 }
 
 .arrowbuttons {
+    justify-self: center;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+    margin-left: 7%;
+    margin-right: 7%;
 }
-
 .styleArrowButton {
     background-color: aliceblue;
     border-radius: 3px;
     border-color: #A4A3A3;
     border-style: solid;
-    width: 15%;
+    width: 5vw;
     height: 90%;
     margin-right: 3%;
     margin-bottom: 2%;
@@ -83,15 +87,23 @@ h4 {
     padding-bottom: 1.5%;
 }
 
-.styleArrowButton:hover {
+.styleArrowButton:hover,
+.styleArrowButton:focus {
     background-color: #A4A3A3;
 }
 
-.emptyBtn {
-    background-color: transparent;
-    width: 15vw;
-    height: 36vh;
+.radialButton {
+    visibility: hidden;
+}
+
+.colorSelector {
+    border-radius: 3px;
+    border-color: #A4A3A3;
+    border-style: solid;
+    width: 7vw;
+    height: 3vh;
     margin-right: 3%;
+    margin-bottom: 2%;
 }
 
 .getResultButtons {
