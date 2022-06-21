@@ -5,7 +5,7 @@ const PreviewPanel = ({style, direction, color1, color2}) => {
 return(
     <div className="gradientPreview"  
     style={{ 
-    backgroundImage: `${style}-gradient(${direction}, ${color1}, ${color2})`
+    backgroundImage: `${style}(${direction}, ${color1}, ${color2})`
     }}>
     
 </div>
